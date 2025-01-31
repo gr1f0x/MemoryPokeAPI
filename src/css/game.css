@@ -1,0 +1,120 @@
+#game {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+/* */
+
+.left-panel,
+.right-panel {
+  background: white;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#game-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#cards-number {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+#play-btn {
+  background: #4caf50;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#timer {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#ranking {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+#ranking th,
+#ranking td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#ranking th {
+  background: #f5f5f5;
+}
+
+#ranking .highlight {
+  background: #fff9c4;
+}
+
+#logout-btn {
+  width: 100%;
+  padding: 8px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#game-board {
+  display: grid;
+  gap: 10px;
+  padding: 15px;
+  background: white;
+  border-radius: 4px;
+  height: fit-content;
+}
+
+.card {
+  aspect-ratio: 1;
+  background: #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80px;
+}
+
+.card.matched {
+  background-color: rgba(76, 175, 80, 0.2);
+  border: 1px solid #4caf50;
+}
+
+#modal {
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background: white;
+}
+
+#modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  #game {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

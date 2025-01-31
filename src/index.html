@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LS PokeMemory</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/register.css">
+  <link rel="stylesheet" href="./css/game.css">
+</head>
+
+<body>
+  <div id="app">
+    <section class="form-section" id="form-section">
+      <form class="form" aria-labelledby="form-title" id="user-form">
+        <h2 id="form-title">REGISTER</h2>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group-button">
+          <button class="form-button-reset" type="reset">Reset</button>
+          <button class="form-button" type="submit">ENTER</button>
+        </div>
+      </form>
+    </section>
+
+    <div id="game" style="display: none;">
+
+      <div class="left-panel">
+        <form id="game-form">
+          <label for="cards-number">Number of cards (even and positive)</label>
+          <input id="cards-number" type="number">
+          <button id="play-btn" type="submit">Play</button>
+        </form>
+        <div id="timer">0m 0s</div>
+      </div>
+
+      <div class="right-panel">
+        <h2>Ranking</h2>
+        <table id="ranking">
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Time</th>
+              <th>Cards</th>
+            </tr>
+          </thead>
+          <tbody id="ranking-table-body">
+          </tbody>
+        </table>
+        <button id="logout-btn">Logout</button>
+      </div>
+
+      <div id="game-board"></div>
+    </div>
+
+    <dialog id="modal"></dialog>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

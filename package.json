@@ -1,0 +1,44 @@
+{
+  "name": "daw-m06-uf2-pr01_initial_code",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "lint": "eslint src/**/*.js --fix",
+    "test:e2e": "cypress run",
+    "test:e2e:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebDevWhispers/Boilerplate-JS.git"
+  },
+  "keywords": [
+    "JS"
+  ],
+  "author": "WebDevWhispers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebDevWhispers/Boilerplate-JS/issues"
+  },
+  "homepage": "https://github.com/WebDevWhispers/Boilerplate-JS#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "cypress": "^13.17.0",
+    "cypress-vite": "^1.5.0",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "prettier": "^3.4.2",
+    "vite": "^5.4.11"
+  }
+}
