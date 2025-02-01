@@ -2,7 +2,7 @@
 
 A Pokémon-themed memory game, developed using **PokeAPI** to fetch Pokémon data and **Firebase** for authentication and data storage.  
 
-![image](https://github.com/user-attachments/assets/f57c6eaf-4bf2-47d7-8fc5-ce7dea351b0b)  
+![image (19)](https://github.com/user-attachments/assets/a49bb147-ba9e-43c0-a64b-d04cd3a88f20)
 
 ## 🚀 Features  
 
